@@ -13,7 +13,7 @@
     <main role="main">
         <div class="album py-5 bg-light">
             <div class="container">
-                <a href="">
+                <a href="/?act=login">
                     <button type="button" class="btn btn-success add-article">Login</button>
                 </a>
                 <a href="/?act=register">

@@ -16,6 +16,12 @@ if (isset($_GET['act'])) {   // isset -проверяет существует �
         case 'register':
             require_once 'action/register.php';
             break;
+        case 'login':
+            require_once 'action/login.php';
+            break;
+        case 'profile':
+            require_once 'action/profile.php';
+            break;
     }
     die;
 }
