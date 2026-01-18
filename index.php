@@ -22,6 +22,12 @@ if (isset($_GET['act'])) {   // isset -проверяет существует �
         case 'profile':
             require_once 'action/profile.php';
             break;
+        case 'add':
+            require_once 'action/add.php';
+            break;
+        case 'articles':
+            require_once 'action/articles.php';
+            break;
     }
     die;
 }
