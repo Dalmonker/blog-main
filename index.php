@@ -9,9 +9,7 @@ require_once 'config.php';
 
 $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-if (isset($_GET['act'])) {   // isset -проверяет существует ли перемменная. GET - получает данные из url.
-                                //  В этой строке кода говорится, что если существует в url параметр act, то неохдимо пройтись свичем
-                                //  и найти элементы. Если register в параметре act, то нужно импортировать файл register.php и выйти.
+if (isset($_GET['act'])) {
     switch ($_GET['act']) {
         case 'register':
             require_once 'action/register.php';
@@ -27,6 +25,12 @@ if (isset($_GET['act'])) {   // isset -проверяет существует �
             break;
         case 'articles':
             require_once 'action/articles.php';
+            break;
+        case 'edit':
+            require_once 'action/edit.php';
+            break;
+        case 'delete':
+            require_once 'action/delete.php';
             break;
     }
     die;
