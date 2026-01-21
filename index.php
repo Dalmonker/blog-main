@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 session_start();
 
 require_once 'config.php';
+require_once 'functions/helpers.php';
 
 $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 

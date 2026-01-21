@@ -1,6 +1,4 @@
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <main role="main">
     <?php require "templates/index.php"; ?>
     <div class="album py-5 bg-light">
