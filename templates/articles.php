@@ -1,8 +1,8 @@
-
+<?php include_once 'templates/header.php'; ?>
 <main role="main">
-    <?php require "templates/index.php"; ?>
     <div class="album py-5 bg-light">
         <div class="container">
+            <?php include_once 'templates/menu.php'; ?>
             <table class="table">
                 <thead>
                 <tr>
@@ -33,3 +33,4 @@
         </div>
     </div>
 </main>
+<?php include_once 'templates/footer.php'; ?>

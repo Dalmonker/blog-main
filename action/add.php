@@ -4,7 +4,8 @@
  * @var $mysqli
  */
 
-$userId = chekUser($mysqli);
+$data = chekUser($mysqli);
+$userId = $data['userId'];
 
 if(count($_POST)) {
     $title = $_POST['title'] ?? null;

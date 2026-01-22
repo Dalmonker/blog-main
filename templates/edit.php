@@ -1,8 +1,8 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<?php include_once 'templates/header.php'; ?>
 <main role="main">
     <div class="album py-5 bg-light">
         <div class="container">
+            <?php include_once 'templates/menu.php'; ?>
             <form class="form-horizontal" role="form" enctype='multipart/form-data' method="POST" action="">
                 <input type="hidden" name="act" value="edit"/>
                 <div class="row">
@@ -81,3 +81,4 @@
         </div>
     </div>
 </main>
+<?php include_once 'templates/footer.php'; ?>

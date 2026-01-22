@@ -1,6 +1,6 @@
 <?php
 
-function chekUser($mysqli) : int
+function chekUser($mysqli) : array
 {
     if(empty($_SESSION['userId'])) {
         header("Location: /?act=login");
@@ -15,5 +15,8 @@ function chekUser($mysqli) : int
         die();
     }
 
-    return $userId;
+    return [
+        'user'=>$user,
+        'userId'=>$userId,
+    ];
 }
