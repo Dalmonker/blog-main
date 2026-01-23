@@ -36,6 +36,9 @@ if (isset($_GET['act'])) {
         case 'logout':
             require_once 'action/logout.php';
             break;
+        case 'view':
+            require_once 'action/view.php';
+            break;
     }
     die;
 }

@@ -16,9 +16,9 @@ if(!$id) {
 }
 
 if(count($_POST)) {
-    $title = $_POST['title'] ?? null;
-    $content = $_POST['content'] ?? null;
-    $mysqli->query("UPDATE article SET userId = " . $userId . ", title = '" . $title . "', content = '" . $content . "' WHERE id = '" . $id . "' AND userId = " . $userId);    header("Location: /?act=articles");
+    $title = strip_tags($_POST['title'] ?? null);
+    $content = strip_tags($_POST['content'] ?? null);
+    $mysqli->query("UPDATE article SET title = '" . $title . "', content = '" . $content . "' WHERE id = '" . $id . "' AND userId = " . $userId);    header("Location: /?act=articles");
     die();
 }
 

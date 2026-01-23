@@ -8,8 +8,8 @@ $data = chekUser($mysqli);
 $userId = $data['userId'];
 
 if(count($_POST)) {
-    $title = $_POST['title'] ?? null;
-    $content = $_POST['content'] ?? null;
+    $title = strip_tags($_POST['title'] ?? null);
+    $content = strip_tags($_POST['content'] ?? null);
     $mysqli->query("INSERT INTO article SET userId = " . $userId . ", title = '" . $title . "', content = '" . $content . "', createdAt = NOW()");
     header("Location: /?act=articles");
     die();

@@ -28,10 +28,10 @@
                             <div class="card box-shadow">
                                 <img class="card-img-top" src="" alt="">
                                 <div class="card-body">
-                                    <p class="card-text"> <?= $row['title'] ?> </p>
+                                    <p class="card-text"> <?= htmlspecialchars($row['title']) ?> </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button class="btn btn-sm btn-outline-secondary">View</button>
+                                            <a href="/?act=view&id=<?= $row['id'] ?>"><button class="btn btn-sm btn-outline-secondary">View</button></a>
                                             <?php if ($user && $row['userId'] == $user['id']): ?>
                                                 <a href="/?act=edit&id=<?= $row['id'] ?>">
                                                     <button class="btn btn-sm btn-outline-secondary">Edit</button>
