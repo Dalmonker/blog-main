@@ -28,6 +28,11 @@
                         </td>
                     </tr>
                 <?php endwhile ?>
+                <?php if ($result->num_rows === 0): ?>
+                    <tr>
+                        <td colspan="4">Not found</td>
+                    </tr>
+                <?php endif ?>
                 </tbody>
             </table>
         </div>

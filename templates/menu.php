@@ -1,10 +1,10 @@
-
-    <a href="/?act=adminArticles">
-        <button type="button" class="btn btn-primary add-article">Admin articles</button>
-    </a>
-    <a href="/?act=articles">
-        <button type="button" class="btn btn-success add-article">Articles</button>
-    </a>
+<!---->
+<!--    <a href="/?act=adminArticles">-->
+<!--        <button type="button" class="btn btn-primary add-article">Admin articles</button>-->
+<!--    </a>-->
+<!--    <a href="/?act=articles">-->
+<!--        <button type="button" class="btn btn-success add-article">Articles</button>-->
+<!--    </a>-->
     <a href="/?act=add">
         <button type="button" class="btn btn-success add-article">Add new article</button>
     </a>
