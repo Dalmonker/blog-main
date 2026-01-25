@@ -44,7 +44,7 @@ if (isset($_GET['act'])) {
 }
 
 $user = null;
-$userId = (int)$_SESSION['userId'];
+$userId = intval($_SESSION['id'] ?? null);
 if ($userId) {
     $result = $mysqli->query("SELECT * FROM user WHERE id = '" . $userId . "' LIMIT 1");
     $user = $result->fetch_assoc();
