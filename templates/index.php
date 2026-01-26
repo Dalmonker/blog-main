@@ -22,9 +22,9 @@
                 <a href="">
                     <button type="button" class="btn btn-dark add-article">All blogs</button>
                 </a>
-                <div class="row">
+                <div class="row mt-5">
                     <?php while($row = $result->fetch_assoc()): ?>
-                    <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="col-md-3 col-sm-6 mb-4 me-3">
                             <div class="card box-shadow">
                                 <img class="card-img-top" src="" alt="">
                                 <div class="card-body">
